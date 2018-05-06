@@ -1,6 +1,6 @@
 ﻿namespace Taschenrechner
 {
-    partial class Form1
+    partial class Taschenrechner
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -66,6 +66,7 @@
             this.button_2.TabIndex = 1;
             this.button_2.Text = "2";
             this.button_2.UseVisualStyleBackColor = true;
+            this.button_2.Click += new System.EventHandler(this.button_2_Click);
             // 
             // button_0
             // 
@@ -75,6 +76,7 @@
             this.button_0.TabIndex = 2;
             this.button_0.Text = "0";
             this.button_0.UseVisualStyleBackColor = true;
+            this.button_0.Click += new System.EventHandler(this.button_0_Click);
             // 
             // button_7
             // 
@@ -84,6 +86,7 @@
             this.button_7.TabIndex = 3;
             this.button_7.Text = "7";
             this.button_7.UseVisualStyleBackColor = true;
+            this.button_7.Click += new System.EventHandler(this.button_7_Click);
             // 
             // button_4
             // 
@@ -93,6 +96,7 @@
             this.button_4.TabIndex = 4;
             this.button_4.Text = "4";
             this.button_4.UseVisualStyleBackColor = true;
+            this.button_4.Click += new System.EventHandler(this.button_4_Click);
             // 
             // button_1
             // 
@@ -102,6 +106,7 @@
             this.button_1.TabIndex = 5;
             this.button_1.Text = "1";
             this.button_1.UseVisualStyleBackColor = true;
+            this.button_1.Click += new System.EventHandler(this.button_1_Click);
             // 
             // button_8
             // 
@@ -111,6 +116,7 @@
             this.button_8.TabIndex = 6;
             this.button_8.Text = "8";
             this.button_8.UseVisualStyleBackColor = true;
+            this.button_8.Click += new System.EventHandler(this.button_8_Click);
             // 
             // button_5
             // 
@@ -120,6 +126,7 @@
             this.button_5.TabIndex = 7;
             this.button_5.Text = "5";
             this.button_5.UseVisualStyleBackColor = true;
+            this.button_5.Click += new System.EventHandler(this.button_5_Click);
             // 
             // button_6
             // 
@@ -129,6 +136,7 @@
             this.button_6.TabIndex = 8;
             this.button_6.Text = "6";
             this.button_6.UseVisualStyleBackColor = true;
+            this.button_6.Click += new System.EventHandler(this.button_6_Click);
             // 
             // button_9
             // 
@@ -138,6 +146,7 @@
             this.button_9.TabIndex = 9;
             this.button_9.Text = "9";
             this.button_9.UseVisualStyleBackColor = true;
+            this.button_9.Click += new System.EventHandler(this.button_9_Click);
             // 
             // button_Kommar
             // 
@@ -156,6 +165,7 @@
             this.button_3.TabIndex = 11;
             this.button_3.Text = "3";
             this.button_3.UseVisualStyleBackColor = true;
+            this.button_3.Click += new System.EventHandler(this.button_3_Click);
             // 
             // button_Mal
             // 
@@ -165,6 +175,7 @@
             this.button_Mal.TabIndex = 12;
             this.button_Mal.Text = "*";
             this.button_Mal.UseVisualStyleBackColor = true;
+            this.button_Mal.Click += new System.EventHandler(this.button_Mal_Click);
             // 
             // button_Geteilt
             // 
@@ -174,6 +185,7 @@
             this.button_Geteilt.TabIndex = 13;
             this.button_Geteilt.Text = "/";
             this.button_Geteilt.UseVisualStyleBackColor = true;
+            this.button_Geteilt.Click += new System.EventHandler(this.button_Geteilt_Click);
             // 
             // button_Minus
             // 
@@ -183,6 +195,7 @@
             this.button_Minus.TabIndex = 14;
             this.button_Minus.Text = "-";
             this.button_Minus.UseVisualStyleBackColor = true;
+            this.button_Minus.Click += new System.EventHandler(this.button_Minus_Click);
             // 
             // button_Plus
             // 
@@ -192,6 +205,7 @@
             this.button_Plus.TabIndex = 15;
             this.button_Plus.Text = "+";
             this.button_Plus.UseVisualStyleBackColor = true;
+            this.button_Plus.Click += new System.EventHandler(this.button_Plus_Click);
             // 
             // button_Clear
             // 
@@ -201,6 +215,7 @@
             this.button_Clear.TabIndex = 16;
             this.button_Clear.Text = "C";
             this.button_Clear.UseVisualStyleBackColor = true;
+            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
             // 
             // button_Ergebnis
             // 
@@ -210,6 +225,7 @@
             this.button_Ergebnis.TabIndex = 17;
             this.button_Ergebnis.Text = "=";
             this.button_Ergebnis.UseVisualStyleBackColor = true;
+            this.button_Ergebnis.Click += new System.EventHandler(this.button_Ergebnis_Click);
             // 
             // label_Ausgabe
             // 
@@ -220,7 +236,7 @@
             this.label_Ausgabe.TabIndex = 18;
             this.label_Ausgabe.Text = "label1";
             // 
-            // Form1
+            // Taschenrechner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -244,8 +260,9 @@
             this.Controls.Add(this.button_0);
             this.Controls.Add(this.button_2);
             this.Controls.Add(this.button_Vorzeichen);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Taschenrechner";
+            this.Text = "Taschenrechner";
+            this.Load += new System.EventHandler(this.Taschenrechner_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
