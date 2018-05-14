@@ -105,8 +105,20 @@ namespace Taschenrechner
         private void button_Ergebnis_Click(object sender, EventArgs e)
         {
             if (label_Ausgabe.Text[Rechenzeichen] == '+')
-                label_Ausgabe.Text= (Convert.ToDouble(label_Ausgabe.Text.Remove(Rechenzeichen)) + Convert.ToDouble(label_Ausgabe.Text.Remove(0, Rechenzeichen + 1))).ToString();
+                label_Ausgabe.Text = (Convert.ToDouble(label_Ausgabe.Text.Remove(Rechenzeichen)) + Convert.ToDouble(label_Ausgabe.Text.Remove(0, Rechenzeichen + 1))).ToString();
 
+            if (label_Ausgabe.Text[Rechenzeichen] == '-')
+                label_Ausgabe.Text = (Convert.ToDouble(label_Ausgabe.Text.Remove(Rechenzeichen)) - Convert.ToDouble(label_Ausgabe.Text.Remove(0, Rechenzeichen + 1))).ToString();
+
+            if (label_Ausgabe.Text[Rechenzeichen] == '*')
+                label_Ausgabe.Text = (Convert.ToDouble(label_Ausgabe.Text.Remove(Rechenzeichen)) * Convert.ToDouble(label_Ausgabe.Text.Remove(0, Rechenzeichen + 1))).ToString();
+
+            if (label_Ausgabe.Text[Rechenzeichen] == '/')
+                label_Ausgabe.Text = (Convert.ToDouble(label_Ausgabe.Text.Remove(Rechenzeichen)) / Convert.ToDouble(label_Ausgabe.Text.Remove(0, Rechenzeichen + 1))).ToString();
+        }
+
+        private void button_Kommar_Click(object sender, EventArgs e)
+        {
 
         }
     }

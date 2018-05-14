@@ -156,6 +156,7 @@
             this.button_Kommar.TabIndex = 10;
             this.button_Kommar.Text = ",";
             this.button_Kommar.UseVisualStyleBackColor = true;
+            this.button_Kommar.Click += new System.EventHandler(this.button_Kommar_Click);
             // 
             // button_3
             // 
